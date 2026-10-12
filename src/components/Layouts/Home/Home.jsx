@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const Home = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const [positionIndex, setPositionIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const position = ["Front End Web Developer", "Back End Web Developer", "Fullstack Web Developer"];
+  const position = useMemo(() => ["Front End Web Developer", "Back End Web Developer", "Fullstack Web Developer"], []);
   const currentPosition = position[positionIndex];
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -32,7 +32,7 @@ const Home = () => {
     return () => {
       clearTimeout(timer);
     };
-  }, [index, isDeleting, currentPosition]);
+  }, [index, isDeleting, currentPosition, position]);
 
   return (
     <div className="flex lg:flex-row flex-col bg-slate-100 h-[600px]">
@@ -50,7 +50,7 @@ const Home = () => {
         </div>
       </div>
       <div className="relative lg:w-full my-auto">
-        <img src="/images/blob.svg" alt="" className="lg:w-[400px] w-full scale-90" />
+        <img src="/images/blob.svg" alt="" className="lg:w-[400px] w-full scale-75 -mt-10" />
         <img src="/images/hero.png" alt="" className="z-10 absolute lg:top-2 top-10 lg:left-16 left-24 rounded-full m-auto w-[200px] lg:w-[300px]" />
       </div>
     </div>
