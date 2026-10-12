@@ -6,7 +6,7 @@ const TechStack = () => {
           <div className="pb-5">
             <h1 className="text-3xl py-4 font-bold text-center">Tech Stack</h1>
           </div>
-          <div className="flex justify-around">
+          <div className="flex justify-around flex-wrap lg:flex-row">
             <img src="/images/tech-stack/react.jpg" alt="" width={100} />
             <img src="/images/tech-stack/express.jpg" alt="" width={100} />
             <img src="/images/tech-stack/mongodb.jpg" alt="" width={100} />

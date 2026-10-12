@@ -1,12 +1,12 @@
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between bg-sky-600 w-full h-20 text-white">
-      <div className="w-2/4">
-        <a href="" className="font-bold text-3xl min-w-md ml-48">
+      <div className="w-full lg:w-2/4">
+        <a href="" className="font-bold text-2xl ml-4 lg:text-3xl w-full lg:min-w-md lg:ml-48">
           Muhamad Reyhan
         </a>
       </div>
-      <div className="w-2/4 flex gap-10">
+      <div className="w-2/4 gap-10 hidden lg:flex">
         <a href="" className="text-xl font-semibold">
           Home
         </a>

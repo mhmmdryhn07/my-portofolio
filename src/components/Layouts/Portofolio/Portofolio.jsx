@@ -7,22 +7,13 @@ const Portofolio = () => {
       <div className="flex justify-center">
         <div className="flex justify-center gap-5 ml-5 w-3/4 flex-wrap">
           <a href="">
-            <img src="/images/portofolio/Register.png" alt="" width={400} className="rounded rounded-lg" />
+            <img src="/images/portofolio/Register.png" alt="" width={400} className="rounded-lg" />
           </a>
           <a href="">
-            <img src="/images/portofolio/rapor.png" alt="" width={400} className="rounded rounded-lg" />
+            <img src="/images/portofolio/rapor.png" alt="" width={400} className="rounded-lg" />
           </a>
           <a href="">
-            <img src="/images/portofolio/coffee.png" alt="" width={400} className="rounded rounded-lg" />
-          </a>
-          <a href="">
-            <img src="/images/portofolio/1.png" alt="" width={400} className="rounded rounded-lg" />
-          </a>
-          <a href="">
-            <img src="/images/portofolio/1.png" alt="" width={400} className="rounded rounded-lg" />
-          </a>
-          <a href="">
-            <img src="/images/portofolio/1.png" alt="" width={400} className="rounded rounded-lg" />
+            <img src="/images/portofolio/coffee.png" alt="" width={400} className="rounded-lg" />
           </a>
         </div>
       </div>

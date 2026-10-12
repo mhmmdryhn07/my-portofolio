@@ -35,10 +35,10 @@ const Home = () => {
   }, [index, isDeleting, currentPosition]);
 
   return (
-    <div className="flex py-5 bg-slate-100 h-[600px]">
-      <div className="w-2/4 flex justify-center flex-col">
+    <div className="flex lg:flex-row flex-col bg-slate-100 h-[600px]">
+      <div className="w-full flex justify-center flex-col text-center lg:text-start">
         <div className="max-w-md mx-auto">
-          <p>-Hello</p>
+          <p className="pt-10">-Hello</p>
           <h1 className="text-4xl font-bold text-gray-800 py-5">
             I'm <span className="text-regal-blue">Muhamad</span> Reyhan
           </h1>
@@ -46,12 +46,12 @@ const Home = () => {
             {text}
             <span className="animate-pulse">|</span>{" "}
           </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error repudiandae fugit ratione animi ex, dolorem velit nostrum vel veritatis cumque!</p>
+          <p className="text-sm px-2 lg:text-lg lg:px-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error repudiandae fugit ratione animi ex, dolorem velit nostrum vel veritatis cumque!</p>
         </div>
       </div>
-      <div className="relative w-2/4 m-auto">
-        <img src="/images/blob.svg" alt="" height={400} width={400} className="scale-110" />
-        <img src="/images/hero.png" alt="" width={300} className="z-10 absolute top-0 left-16 rounded-full" />
+      <div className="relative lg:w-full my-auto">
+        <img src="/images/blob.svg" alt="" className="lg:w-[400px] w-full scale-90" />
+        <img src="/images/hero.png" alt="" className="z-10 absolute lg:top-2 top-10 lg:left-16 left-24 rounded-full m-auto w-[200px] lg:w-[300px]" />
       </div>
     </div>
   );
